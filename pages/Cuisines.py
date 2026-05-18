@@ -191,7 +191,7 @@ quantidade = st.sidebar.slider(
 #criando um novo df para que ele seja condicionado ao filtro "Escolha os país e tipo de culinárias"
 linhas_selecionadas = (df['country_name'].isin(country_options)) & (df['cuisines'].isin(cozinha_options))
 df = df.loc[linhas_selecionadas, :]
-st.dataframe(df)
+
 
 #====================================================
 # Layout no Steamlit
