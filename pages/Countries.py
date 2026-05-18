@@ -165,7 +165,7 @@ country_options = st.sidebar.multiselect(
 #criando um novo df para que ele seja condicionado ao filtro "Escolha os país"
 linhas_selecionadas = df['country_name'].isin(country_options)
 df = df.loc[linhas_selecionadas, :]
-st.dataframe(df)
+
 
 #====================================================
 # Layout no Steamlit
