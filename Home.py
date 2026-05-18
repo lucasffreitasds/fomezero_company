@@ -198,8 +198,6 @@ with st.container():
             
 with st.container():
     
-    df_aux = df.loc[0:5, :]
-    st.dataframe(df_aux)
 
     #centralizando o mapa
     centro_lat = df['latitude'].mean()
