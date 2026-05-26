@@ -111,7 +111,6 @@ def top_restaurantes(df, quantidade):
 def top_melhores_cozinhas(df, quantidade):
     df_aux = df.groupby(['country_name', 'cuisines'])['aggregate_rating'] \
                         .mean() \
-                        .unique \
                         .reset_index(name='media_nota') \
                         .sort_values(by='media_nota', ascending = False) \
                         .head(quantidade)
@@ -121,7 +120,6 @@ def top_melhores_cozinhas(df, quantidade):
 def top_piores_cozinhas(df, quantidade):
     df_aux = df.groupby(['country_name', 'cuisines'])['aggregate_rating'] \
                         .mean() \
-                        .unique \
                         .reset_index(name='media_nota') \
                         .sort_values(by='media_nota', ascending = True) \
                         .head(quantidade)
