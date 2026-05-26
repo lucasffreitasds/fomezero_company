@@ -103,29 +103,30 @@ def melhores_rest_italianos(df2):
 
 def top_restaurantes(df, quantidade):
     df_aux = df.loc[:, ['restaurant_id', 'restaurant_name', 'aggregate_rating']] \
-               .sort_values(by = ['aggregate_rating', 'restaurant_id'], ascending = [False, True]) \
-               .reset_index() \
+               .sort_values(by=['aggregate_rating', 'restaurant_id'], ascending=[False, True]) \
+               .drop_duplicates(subset='restaurant_id') \
+               .reset_index(drop=True) \
                .head(quantidade)
     return df_aux
 
 def top_melhores_cozinhas(df, quantidade):
-    df_aux = df.groupby(['country_name', 'cuisines'])['aggregate_rating'] \
-                        .mean() \
-                        .reset_index(name='media_nota') \
-                        .sort_values(by='media_nota', ascending = False) \
-                        .head(quantidade)
-    fig = px.bar(df_aux, x = 'cuisines', y = 'media_nota', color = 'country_name', barmode = 'group')
+    df_aux = df.groupby('cuisines')['aggregate_rating'] \
+               .mean() \
+               .reset_index(name='media_nota') \
+               .sort_values(by='media_nota', ascending=False) \
+               .head(quantidade)
+    fig = px.bar(df_aux, x='cuisines', y='media_nota')
     return fig
 
+
 def top_piores_cozinhas(df, quantidade):
-    df_aux = df.groupby(['country_name', 'cuisines'])['aggregate_rating'] \
-                        .mean() \
-                        .reset_index(name='media_nota') \
-                        .sort_values(by='media_nota', ascending = True) \
-                        .head(quantidade)
-    fig = px.bar(df_aux, x = 'cuisines', y = 'media_nota', color = 'country_name', barmode = 'group')
+    df_aux = df.groupby('cuisines')['aggregate_rating'] \
+               .mean() \
+               .reset_index(name='media_nota') \
+               .sort_values(by='media_nota', ascending=True) \
+               .head(quantidade)
+    fig = px.bar(df_aux, x='cuisines', y='media_nota')
     return fig
-    
 #===================================
 # Importando os dados
 #===================================
