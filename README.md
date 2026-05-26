@@ -1,6 +1,6 @@
 # Fome Zero Company
 
-#1. Problema de Negócio
+# 1. Problema de Negócio
 
 A empresa Fome Zero é uma marketplace de restaurantes. Ou seja, seu core business é facilitar o encontro e negociações de clientes e restaurantes. Os restaurantes fazem o cadastro dentro da plataforma da Fome Zero, que disponibiliza informações como endereço, tipo de culinária servida, se possui reservas, se faz entregas e também uma nota de avaliação dos serviços e produtos do restaurante, dentre outras informações.
 Recém contratado, o CEO Kleiton Guerra precisa entender melhor o negócio para conseguir tomar as melhores decisões estratégicas e alavancar ainda mais a Fome Zero Company, e para isso, ele precisa que seja feita uma análise nos dados da empresa e que sejam gerados dashboards, a partir dessas análises, para responder às seguintes perguntas:
@@ -68,7 +68,7 @@ Análise a partir das culinárias:
 O CEO também pediu que fosse gerado um dashboard que permitisse que ele
 visualizasse as principais informações das perguntas que ele fez.
 
-#2. Premissas do Negócio
+# 2. Premissas do Negócio
 
 1. A análise foi realizada com dados entre 10/05/2026 e 18/05/2026.
 2. Marketplace foi o modelo de negócio assumido.
@@ -79,7 +79,7 @@ visualizasse as principais informações das perguntas que ele fez.
     4. análise a partir dos restaurantes
     5. análise a partir dos tipos de culinária
 
-#3. Estratégia da Solução
+# 3. Estratégia da Solução
 
 1. Coleta dos dados:
 a. os dados foram coletados via Kaggle
@@ -104,24 +104,24 @@ a. os dados foram coletados via Kaggle
 5. Respostas disponíveis no Streamlit:
 a. utilizando o Streamlit,  os insights e respostas estarão disponíveis para acessá-las, de forma organizada, tendo acesso através do menu, as 4 principais visões do negócio.
 
-#4. Top 3 Insights de Dados
+# 4. Top 3 Insights de Dados
 
 1. A Índia é disparada o País com mais restaurantes cadastrados, representando 45% do total de restaurantes no mundo. Isso mostra uma grande concentração em apenas um país
 2. Fora da Índia, a concentração de restaurantes cadastrados estão nos grandes centros de cada país, com destaque pra Birmingham e Doha, sendo as duas cidades com o maior número
 3. A percepção de tipo de culinária muda muito de acordo com a geografia, podendo uma culinária performar bem em um país e mal em outro
 
-#5. O Produto Final do Projeto
+# 5. O Produto Final do Projeto
 
 Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
 O painel pode ser acessado através desse link: [https://project-currycompany.streamlit.app/](https://fome-zero-company-projeto-final.streamlit.app/)
 
-#6. Conclusão
+# 6. Conclusão
 
 O objetivo desse projeto foi criar um conjunto de gráficos e tabelas para municiar da melhor maneira o CEO, afim de usar os dados para conhecer melhor a Fome Zero Company e tomar as melhores decisões.
 
 A empresa por ser mundial, está nos grandes centros  de alguns países mas, concentra-se principalmente na Índia. 
 
-#7. Próximo Passo
+# 7. Próximo Passo
 
 1. Fazer cruzamentos para entender melhor as relações culinárias/notas/países
 2. Fazer cruzamentos para entender melhor as relações preços/notas/países
